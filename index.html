@@ -1,41 +1,77 @@
 <!doctype html>
-<html lang="en">
+<html lang="uz">
   <head>
+    <!-- Charset -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>NovaMind AI – Math & ChatGPT Assistant</title>
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
-    <!-- Basic SEO -->
+    <!-- Title -->
+    <title>NovaMind AI — Math, GPT Chat & Vision Assistant</title>
+
+    <!-- Primary SEO -->
     <meta
       name="description"
-      content="NovaMind AI – matematik amallarni yechish va ChatGPT uslubida savollarga javob beradigan sun’iy intellekt yordamchi."
+      content="NovaMind AI — matematik masalalar, formulalar, tasvir tahlili va ChatGPT-stilida savol-javob qiluvchi AI yordamchi."
     />
-    <meta name="author" content="NovaMind AI" />
+    <meta name="keywords" content="AI, matematik, chatGPT, vision AI, solve math, GPT AI, assistant" />
+    <meta name="author" content="NovaMind AI Team" />
 
-    <!-- Open Graph (for Facebook, Telegram, etc.) -->
-    <meta property="og:title" content="NovaMind AI – Math & ChatGPT Assistant" />
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://novamind.ai/" />
+
+    <!-- Theme Color (mobile navbar colors) -->
+    <meta name="theme-color" content="#16a34a" />
+    <meta name="msapplication-navbutton-color" content="#16a34a" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Open Graph (Telegram, WhatsApp, Facebook) -->
+    <meta property="og:title" content="NovaMind AI — Math & GPT Assistant" />
     <meta
       property="og:description"
-      content="Matematik misollarni yechish, formulalarni tushuntirish va ChatGPT uslubida suhbatlashadigan AI platforma."
+      content="Matematik misollarni yeching, formulalarni tushuning, va AI bilan suhbatlashing."
     />
+    <meta property="og:url" content="https://novamind.ai" />
     <meta property="og:type" content="website" />
-    <!-- mind_image.jpg public papkada tursa shu yo‘l to‘g‘ri -->
-    <meta property="og:image" content="/mind_image.jpg" />
+    <meta property="og:site_name" content="NovaMind AI" />
+    <meta property="og:image" content="https://novamind.ai/mind_image.jpg" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="NovaMind AI – Math & ChatGPT Assistant" />
+    <meta name="twitter:title" content="NovaMind AI — Math & GPT Chat Assistant" />
     <meta
       name="twitter:description"
-      content="Matematika va ChatGPT-stilidagi chatni birlashtirgan sun’iy intellekt yordamchi."
+      content="Matematik va ChatGPT uslubidagi AI yordamchi."
     />
+    <meta name="twitter:image" content="https://novamind.ai/mind_image.jpg" />
     <meta name="twitter:site" content="@NovaMindAI" />
-    <meta name="twitter:image" content="/mind_image.jpg" />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="ai.png" />
+
+    <!-- Preconnect (Performance for LLM API, fonts, analytics, CDNs) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Optional Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
   </head>
 
   <body>
     <div id="root"></div>
+
+    <!-- Main App Script -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

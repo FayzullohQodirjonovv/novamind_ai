@@ -7,6 +7,8 @@ export interface AppSettings {
   darkMode: boolean;
   responseSpeed: "normal" | "fast" | "ultra";
   animationLevel: "off" | "smooth" | "crazy";
+  // Yangi: chat / yozishmalar tarixini saqlash
+  saveChatHistory: boolean;
 }
 
 interface SettingsProps {
@@ -184,6 +186,28 @@ const Settings = ({
                 </div>
               </section>
 
+              {/* Chat tarixi / yozishmalar tarixi */}
+              <section className="space-y-3">
+                <h3 className="text-sm font-semibold text-muted-foreground">
+                  Chat tarixi
+                </h3>
+                <div className="flex items-center justify-between p-4 bg-secondary/50 rounded-2xl">
+                  <div className="flex flex-col gap-1">
+                    <p className="font-medium">Yozishmalar tarixini saqlash</p>
+                    <p className="text-xs text-muted-foreground">
+                      Agar yoqsangiz, barcha chatlaringiz brauzer xotirasida saqlanadi.
+                      O‘chirib qo‘ysangiz, yangi xabarlar tarix sifatida saqlanmaydi.
+                    </p>
+                  </div>
+                  <Switch
+                    checked={settings.saveChatHistory}
+                    onCheckedChange={(checked) =>
+                      onSettingsChange({ ...settings, saveChatHistory: checked })
+                    }
+                  />
+                </div>
+              </section>
+
               {/* Clear Chat */}
               {onClearChat && (
                 <section className="space-y-3">
@@ -209,8 +233,7 @@ const Settings = ({
               {/* Info */}
               <div className="p-4 bg-primary/10 rounded-2xl">
                 <p className="text-xs text-center text-muted-foreground">
-                  ✨ Barcha sozlamalar brauzeringizda (localStorage) avtomatik
-                  saqlanadi
+                  ✨ Barcha sozlamalar brauzeringizda (localStorage) avtomatik saqlanadi
                 </p>
               </div>
             </div>
